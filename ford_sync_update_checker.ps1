@@ -1,6 +1,10 @@
 $url = "https://www.serviceseucache.ford.com/api/Sync/v1/getInstallPackages";
 $passMessage = "Already latest version has been installed for this VIN";
 
+$headers = @{
+    'Upgrade-Insecure-Requests' = 1
+}
+
 $params = @{
     locale = "en_GB";
     vinCode = "TEST"; # Add own VIN for Ford vehicle here, will error if not valid VIN
