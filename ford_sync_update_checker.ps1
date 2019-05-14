@@ -3,20 +3,20 @@ $passMessage = 'Already latest version has been installed for this VIN';
 
 $headers = @{
     'Upgrade-Insecure-Requests' = 1
-}
+};
 
 $params = @{
     locale = 'en_GB';
     vinCode = 'TEST'; # Add own VIN for Ford vehicle here, will error if not valid VIN
     appType = 'map';
-}
+};
 
 # Make HTTP GET request to check if Ford Maps is up to date
 try {
     $mapRequest = Invoke-RestMethod $url -Method Get -Body $params;
 } catch {
         Write-Host $_.Exception;
-        exit
+        exit;
 }
 
 # Make HTTP GET request to check if Ford SYNC is up to date
@@ -25,7 +25,7 @@ try {
     $syncRequest = Invoke-RestMethod $url -Headers $headers -Method Get -Body $params;
 } catch {
     Write-Host $_.Exception;
-    exit
+    exit;
 }
 
 if ($($syncRequest.data.message) -ne $passMessage -or $($mapRequest.data.message) -ne $passMessage) {
