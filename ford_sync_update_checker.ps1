@@ -1,6 +1,5 @@
 Write-Output 'Checking for car updates...';
 $url = 'https://www.serviceseucache.ford.com/api/Sync/v2/getInstallPackages';
-$passMessage = 'Already latest version has been installed for this VIN';
 
 $headers = @{
 	'Upgrade-Insecure-Requests' = 1
