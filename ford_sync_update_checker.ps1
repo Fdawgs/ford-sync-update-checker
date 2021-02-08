@@ -30,10 +30,10 @@ try {
 }
 
 
-if ($syncRequest.data.message -eq $null) {
+if ($null -eq $syncRequest.data.message) {
     Write-Output 'Ford SYNC status: Update available';
 }
-if ($mapRequest.data.message -eq $null) {
+if ($null -eq $mapRequest.data.message) {
     Write-Output 'Ford Maps status: Update available';
 }
 
