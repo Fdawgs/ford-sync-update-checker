@@ -15,7 +15,7 @@ $params = @{
 try {
 	$mapRequest = Invoke-RestMethod $url -Method Get -Body $params;
 } catch {
-	Write-Host $_.Exception;
+	Write-Output $_.Exception;
 	exit;
 }
 
@@ -25,7 +25,7 @@ try {
     $syncRequest = Invoke-RestMethod $url -Headers $headers -Method Get -Body $params;
 
 } catch {
-	Write-Host $_.Exception;
+	Write-Output $_.Exception;
 	exit;
 }
 
