@@ -15,7 +15,7 @@ $params = @{
 try {
 	$mapRequest = Invoke-RestMethod $url -Method Get -Body $params;
 } catch {
-	Write-Host $_.Exception;
+	Write-Output $_.Exception;
 	exit;
 }
 
@@ -25,15 +25,15 @@ try {
     $syncRequest = Invoke-RestMethod $url -Headers $headers -Method Get -Body $params;
 
 } catch {
-	Write-Host $_.Exception;
+	Write-Output $_.Exception;
 	exit;
 }
 
 
-if ($syncRequest.data.message -eq $null) {
+if ($null -eq $syncRequest.data.message) {
     Write-Output 'Ford SYNC status: Update available';
 }
-if ($mapRequest.data.message -eq $null) {
+if ($null -eq $mapRequest.data.message) {
     Write-Output 'Ford Maps status: Update available';
 }
 
