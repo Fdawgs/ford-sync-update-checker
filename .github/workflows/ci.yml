@@ -1,0 +1,32 @@
+name: CI
+
+on:
+    push:
+        paths-ignore:
+            - '*.md'
+    pull_request:
+        paths-ignore:
+            - '*.md'
+
+jobs:
+    lint:
+        name: Lint Code
+        if: github.event.pull_request.draft == false
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Run PSScriptAnalyzer
+              uses: devblackops/github-action-psscriptanalyzer@v2.3.0
+              with:
+                  repoToken: ${{ secrets.GITHUB_TOKEN }}
+
+    automerge:
+        name: Automatically Merge Dependabot Pull Requests
+        if: github.event.pull_request.draft == false
+        needs: [lint]
+        runs-on: ubuntu-latest
+        steps:
+            - uses: fastify/github-action-merge-dependabot@v1.1.1
+              if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' }}
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
