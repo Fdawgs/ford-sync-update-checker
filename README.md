@@ -9,4 +9,4 @@ by making a HTTP GET request to Ford's REST endpoint.
 
 ## License
 
-`ford-sync-update-checker` is licensed under the [MIT](https://github.com/Fdawgs/ford-sync-update-checker/blob/master/LICENSE) license.
+`ford-sync-update-checker` is licensed under the [MIT](./LICENSE) license.
