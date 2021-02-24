@@ -1,0 +1,14 @@
+name: Spellcheck
+
+on: [push, pull_request]
+
+jobs:
+    spellcheck:
+        name: Spellcheck with Typo CI
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2.3.4
+            - name: TypoCheck
+              uses: typoci/spellcheck-action@v0.3.0
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
