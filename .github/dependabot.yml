@@ -1,7 +1,10 @@
 version: 2
 updates:
     - package-ecosystem: github-actions
+      commit-message:
+          include: scope
+          prefix: build
       directory: /
       schedule:
           interval: monthly
-      open-pull-requests-limit: 99
+      open-pull-requests-limit: 25
