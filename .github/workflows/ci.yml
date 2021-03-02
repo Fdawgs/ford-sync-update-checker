@@ -22,6 +22,16 @@ jobs:
               with:
                   repoToken: ${{ secrets.GITHUB_TOKEN }}
 
+    commit-lint:
+        name: Lint Commit Messages
+        if: github.event.pull_request.draft == false
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2.3.4
+              with:
+                  fetch-depth: 0
+            - uses: wagoid/commitlint-github-action@v3.0.1
+
     automerge:
         name: Automatically Merge Dependabot Pull Requests
         if: github.event.pull_request.draft == false
@@ -36,7 +46,7 @@ jobs:
     release:
         name: Create/Update Release Pull Request
         if: github.ref == 'refs/heads/master'
-        needs: [commit-lint, lint, unit-tests]
+        needs: [commit-lint, lint]
         runs-on: ubuntu-latest
         steps:
             - name: Release Please
