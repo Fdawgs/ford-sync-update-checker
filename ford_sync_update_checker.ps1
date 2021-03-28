@@ -1,5 +1,5 @@
 Write-Output 'Checking for car updates...';
-$url = 'https://www.serviceseucache.ford.com/api/Sync/v2/getInstallPackages';
+$url = 'https://www.servicescache.ford.com/api/Sync/v2/getInstallPackages';
 
 $headers = @{
 	'Upgrade-Insecure-Requests' = 1
