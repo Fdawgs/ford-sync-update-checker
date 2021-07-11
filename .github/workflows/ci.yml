@@ -31,16 +31,3 @@ jobs:
               with:
                   fetch-depth: 0
             - uses: wagoid/commitlint-github-action@v3.0.6
-
-    release:
-        name: Create/Update Release Pull Request
-        if: github.ref == 'refs/heads/master'
-        needs: [commit-lint, lint]
-        runs-on: ubuntu-latest
-        steps:
-            - name: Release Please
-              id: release
-              uses: GoogleCloudPlatform/release-please-action@v2.24.1
-              with:
-                  changelog-types: '[ { "type": "feat", "section": "Features", "hidden": false }, { "type": "fix", "section": "Bug Fixes", "hidden": false }, { "type": "build", "section": "Dependencies", "hidden": false }, { "type": "chore", "section": "Miscellaneous", "hidden": false }, { "type": "ci", "section": "Miscellaneous", "hidden": false }, { "type": "perf", "section": "Performance", "hidden": false }, { "type": "refactor", "section": "Miscellaneous", "hidden": false }, { "type": "style", "section": "Miscellaneous", "hidden": false }, { "type": "docs", "section": "Documentation", "hidden": false }]'
-                  release-type: simple
