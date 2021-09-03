@@ -1,5 +1,33 @@
 # Changelog
 
+### [1.0.5](https://www.github.com/Fdawgs/ford-sync-update-checker/compare/v1.0.4...v1.0.5) (2021-09-03)
+
+
+### Miscellaneous
+
+* **workflows:** remove `stale.yml` ([c09dabf](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/c09dabf212ad0a708ac3a3032eb617535cf21e04))
+
+
+### Continuous Integration
+
+* **automerge:** add dependabot automerge workflow ([6a1dfea](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/6a1dfea2e98f8c043d23428bf20dc20f363ccd10))
+* **ci:** ignore dependabot prs for commit message linting ([ecbe8be](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/ecbe8be9be183056d927f7ff7d25854adb522bcf))
+* **link-check:** reduce frequency from weekly to monthly ([c971d0b](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/c971d0bc4db9bcdf9d98f67667162088e9aeb5fd))
+* **workflows:** move release steps into `cd` workflow ([1213e53](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/1213e53155c8e73a8d843e45635c4209a2a5a914))
+* **workflows:** run only on push and pulls to master branch ([3840a0e](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/3840a0ec57756a25f44f4d01aded1265e1380f11))
+
+
+### Dependencies
+
+* **deps:** bump actions/github-script from 4.0.2 to 4.1 ([96d9abd](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/96d9abdf693a3ca9337bbc5dc13f415fba3b4fad))
+* **deps:** bump actions/setup-node from 2.1.5 to 2.2.0 ([74860a9](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/74860a9feed862fe862456c2ec279e0ec9fdee01))
+* **deps:** bump actions/setup-node from 2.2.0 to 2.3.0 ([d74a931](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/d74a9315dafba8c2aeeb5345eab317f60c9c384a))
+* **deps:** bump actions/setup-node from 2.3.0 to 2.4.0 ([16be35a](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/16be35a07a7e51baee74078978bf1bed6b417e69))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([9eec39a](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/9eec39a824b2a2a53f7eef1217a386662a5c1fe0))
+* **deps:** bump typoci/spellcheck-action from 0.4.0 to 1.1.0 ([42e2b70](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/42e2b707e1a52409e4735a030b8d5a2e2e2c1c75))
+* **deps:** bump wagoid/commitlint-github-action from 3.0.6 to 3.1.4 ([2d7959b](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/2d7959bb7857a2e1f506e01cc95d155c3cec78f0))
+* **deps:** bump wagoid/commitlint-github-action from 3.1.4 to 4.1.1 ([38f2c80](https://www.github.com/Fdawgs/ford-sync-update-checker/commit/38f2c8064dfbb2df59ea73a76f049db92e22481a))
+
 ### [1.0.4](https://www.github.com/Fdawgs/ford-sync-update-checker/compare/v1.0.3...v1.0.4) (2021-04-12)
 
 
