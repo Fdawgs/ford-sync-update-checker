@@ -22,7 +22,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2.3.4
             - name: Run PSScriptAnalyzer
-              uses: devblackops/github-action-psscriptanalyzer@v2.3.1
+              uses: devblackops/github-action-psscriptanalyzer@v2.4.0
               with:
                   repoToken: ${{ secrets.GITHUB_TOKEN }}
 
