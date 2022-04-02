@@ -1,5 +1,50 @@
 # Changelog
 
+### [1.0.6](https://github.com/Fdawgs/ford-sync-update-checker/compare/v1.0.5...v1.0.6) (2022-04-02)
+
+
+### Documentation
+
+* bump coc from v2.0.0 to v2.1.0 ([8082bc2](https://github.com/Fdawgs/ford-sync-update-checker/commit/8082bc2e28f6390e9c646f37bd0e9c93f2d21ece))
+* **coc:** reduce verbosity ([4f4768f](https://github.com/Fdawgs/ford-sync-update-checker/commit/4f4768f0d6e87e4c1125c01933d663e1887e584e))
+
+
+### Miscellaneous
+
+* **.github:** remove trailing whitespace ([1151a06](https://github.com/Fdawgs/ford-sync-update-checker/commit/1151a066bfb1c953e296971457d113daccbaba7c))
+* **.vscode:** add `mhutchie.git-graph` extension ([6c3c3f9](https://github.com/Fdawgs/ford-sync-update-checker/commit/6c3c3f9913c7024dd8d3f501b7db63a38129d985))
+* **.vscode:** add settings ([abf56a2](https://github.com/Fdawgs/ford-sync-update-checker/commit/abf56a2584acd087857b03a0adfcefd6124936f5))
+
+
+### Continuous Integration
+
+* add job step names, workflow comments, and whitespace ([#52](https://github.com/Fdawgs/ford-sync-update-checker/issues/52)) ([680f555](https://github.com/Fdawgs/ford-sync-update-checker/commit/680f555963acee15d9bca58ef4361d47e4d8bf8e))
+* **automerge:** update location of octokit rest methods ([73a3936](https://github.com/Fdawgs/ford-sync-update-checker/commit/73a3936d1db38ac906f162c2b5aa224611f5f1fe))
+* only save pr number artifact for dependabot ([#53](https://github.com/Fdawgs/ford-sync-update-checker/issues/53)) ([e733f51](https://github.com/Fdawgs/ford-sync-update-checker/commit/e733f5149a455cdc7b051766d6419af63d7bd6f3))
+* remove spellcheck workflow ([#46](https://github.com/Fdawgs/ford-sync-update-checker/issues/46)) ([ffdf7fd](https://github.com/Fdawgs/ford-sync-update-checker/commit/ffdf7fdfaa7f308462a0d0e407831f69d7a5a6a3))
+* **spell-check:** do not run on draft prs ([#40](https://github.com/Fdawgs/ford-sync-update-checker/issues/40)) ([73d5190](https://github.com/Fdawgs/ford-sync-update-checker/commit/73d51900cc68a93216e7326b2febf82ae46c92ee))
+* trigger workflows when drafts marked as "ready to review" ([#41](https://github.com/Fdawgs/ford-sync-update-checker/issues/41)) ([b8e56f0](https://github.com/Fdawgs/ford-sync-update-checker/commit/b8e56f0a51fa2ab0a40da550f2fd12de6cc95fc6))
+
+
+### Dependencies
+
+* **dependabot:** ignore minor and patch commit-lint updates ([#48](https://github.com/Fdawgs/ford-sync-update-checker/issues/48)) ([6a7e976](https://github.com/Fdawgs/ford-sync-update-checker/commit/6a7e976b7e73fe73c74ba8a7d69875a7265b082d))
+* **dependabot:** ignore minor and patch github-actions updates ([#42](https://github.com/Fdawgs/ford-sync-update-checker/issues/42)) ([c97c7ac](https://github.com/Fdawgs/ford-sync-update-checker/commit/c97c7ac38bcd8cf1401227f1e44f02d17a182af8))
+* **dependabot:** ignore minor and patch release-please-action updates ([44af1b2](https://github.com/Fdawgs/ford-sync-update-checker/commit/44af1b2f0530f10e7a7e826de841d314fcc2f307))
+* **dependabot:** use default open-pull-requests-limit value ([bf5948d](https://github.com/Fdawgs/ford-sync-update-checker/commit/bf5948d59c6cf54174bcb68b84b6caba38f6324e))
+* **deps:** bump actions/checkout from 2 to 3 ([910c0e2](https://github.com/Fdawgs/ford-sync-update-checker/commit/910c0e2dc088236414c0d99929cc827c36884884))
+* **deps:** bump actions/checkout from 2.3.4 to 2.3.5 ([dc103cb](https://github.com/Fdawgs/ford-sync-update-checker/commit/dc103cbeae07353315b2a9f2ac86b98a2968e0b0))
+* **deps:** bump actions/github-script from 4.1 to 5 ([11aaaf9](https://github.com/Fdawgs/ford-sync-update-checker/commit/11aaaf9bf7ddb3aed6ed70791479bb773604ef6c))
+* **deps:** bump actions/github-script from 5 to 6 ([d6c3300](https://github.com/Fdawgs/ford-sync-update-checker/commit/d6c33007ffdbd5eff26e3db513195f2c6b65f7d1))
+* **deps:** bump actions/setup-node from 2 to 3 ([8977b81](https://github.com/Fdawgs/ford-sync-update-checker/commit/8977b81e8484b746a08167b0700b22b2d3871ca9))
+* **deps:** bump actions/setup-node from 2.4.0 to 2.4.1 ([0f4d586](https://github.com/Fdawgs/ford-sync-update-checker/commit/0f4d586120b56ed75a1fbf1164c31e56c355bbb3))
+* **deps:** bump devblackops/github-action-psscriptanalyzer ([f2e0d17](https://github.com/Fdawgs/ford-sync-update-checker/commit/f2e0d17733102d53c6ccc34fb70c4fd1677ec4c1))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([93f6609](https://github.com/Fdawgs/ford-sync-update-checker/commit/93f6609ddf8eb0c757b37e38befc367e79dbc94a))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([acebe04](https://github.com/Fdawgs/ford-sync-update-checker/commit/acebe042b0ad9f49c64d629fb9845b47b7163125))
+* **deps:** bump GoogleCloudPlatform/release-please-action from 2 to 3 ([3de8ac7](https://github.com/Fdawgs/ford-sync-update-checker/commit/3de8ac74d5c12e98f09a76c60c9e8e0aa8d23072))
+* **deps:** bump wagoid/commitlint-github-action from 4.1.1 to 4.1.5 ([4b0b79d](https://github.com/Fdawgs/ford-sync-update-checker/commit/4b0b79d5a1367215379921a69cda9967064b15f7))
+* **deps:** bump wagoid/commitlint-github-action from 4.1.5 to 4.1.9 ([de49296](https://github.com/Fdawgs/ford-sync-update-checker/commit/de492964a9d6cd0685adb4c2a777296ba4cf57ac))
+
 ### [1.0.5](https://www.github.com/Fdawgs/ford-sync-update-checker/compare/v1.0.4...v1.0.5) (2021-09-03)
 
 
