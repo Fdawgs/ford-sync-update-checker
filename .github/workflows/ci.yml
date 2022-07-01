@@ -56,7 +56,7 @@ jobs:
                   persist-credentials: false
 
             - name: Run Commitlint
-              uses: wagoid/commitlint-github-action@v4
+              uses: wagoid/commitlint-github-action@v5
 
     # This job is used to save the PR number in an artifact, for use in the automerge.yml workflow
     save-pr-number:
