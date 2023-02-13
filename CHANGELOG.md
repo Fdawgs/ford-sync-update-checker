@@ -13,7 +13,7 @@
 -   **.vscode:** add `mhutchie.git-graph` extension ([6c3c3f9](https://github.com/Fdawgs/ford-sync-update-checker/commit/6c3c3f9913c7024dd8d3f501b7db63a38129d985))
 -   **.vscode:** add settings ([abf56a2](https://github.com/Fdawgs/ford-sync-update-checker/commit/abf56a2584acd087857b03a0adfcefd6124936f5))
 
-### Continuous Integration
+### Continuous integration
 
 -   add job step names, workflow comments, and whitespace ([#52](https://github.com/Fdawgs/ford-sync-update-checker/issues/52)) ([680f555](https://github.com/Fdawgs/ford-sync-update-checker/commit/680f555963acee15d9bca58ef4361d47e4d8bf8e))
 -   **automerge:** update location of octokit rest methods ([73a3936](https://github.com/Fdawgs/ford-sync-update-checker/commit/73a3936d1db38ac906f162c2b5aa224611f5f1fe))
@@ -47,7 +47,7 @@
 
 -   **workflows:** remove `stale.yml` ([c09dabf](https://github.com/Fdawgs/ford-sync-update-checker/commit/c09dabf212ad0a708ac3a3032eb617535cf21e04))
 
-### Continuous Integration
+### Continuous integration
 
 -   **automerge:** add dependabot automerge workflow ([6a1dfea](https://github.com/Fdawgs/ford-sync-update-checker/commit/6a1dfea2e98f8c043d23428bf20dc20f363ccd10))
 -   **ci:** ignore dependabot prs for commit message linting ([ecbe8be](https://github.com/Fdawgs/ford-sync-update-checker/commit/ecbe8be9be183056d927f7ff7d25854adb522bcf))
@@ -68,7 +68,7 @@
 
 ### [1.0.4](https://github.com/Fdawgs/ford-sync-update-checker/compare/v1.0.3...v1.0.4) (2021-04-12)
 
-### Bug Fixes
+### Bug fixes
 
 -   update url to global cache ([34b874a](https://github.com/Fdawgs/ford-sync-update-checker/commit/34b874ab9be19796028c7df655607f6109c06acc))
 
