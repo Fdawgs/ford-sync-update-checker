@@ -6,16 +6,16 @@ name: Check Markdown for Broken Links
 on:
     push:
         branches:
-            - master
+            - main
         paths:
-            - '**/*.md'
-            - '!CHANGELOG.md'
+            - "**/*.md"
+            - "!CHANGELOG.md"
     pull_request:
         branches:
-            - master
+            - main
         paths:
-            - '**/*.md'
-            - '!CHANGELOG.md'
+            - "**/*.md"
+            - "!CHANGELOG.md"
         types: [opened, ready_for_review, reopened, synchronize]
     schedule:
         #        ┌───────────── minute (0 - 59)
@@ -27,7 +27,7 @@ on:
         #        │  │ │ │ │
         #        │  │ │ │ │
         #        *  * * * *
-        - cron: '30 1 1 * *'
+        - cron: "30 1 1 * *"
     # Allows this workflow to be run manually from the Actions tab
     workflow_dispatch:
 
@@ -48,5 +48,5 @@ jobs:
             - name: Run Linkinator
               uses: JustinBeckwith/linkinator-action@v1
               with:
-                  paths: '**/*.md'
-                  skip: 'https://(?:www.|)github.com/Fdawgs/.*/(?:commit|issues|compare)/, http://0.0.0.0'
+                  paths: "**/*.md"
+                  skip: "https://(?:www.|)github.com/Fdawgs/.*/(?:commit|issues|compare)/, http://0.0.0.0"

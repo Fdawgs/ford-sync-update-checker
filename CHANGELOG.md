@@ -53,7 +53,7 @@
 -   **ci:** ignore dependabot prs for commit message linting ([ecbe8be](https://github.com/Fdawgs/ford-sync-update-checker/commit/ecbe8be9be183056d927f7ff7d25854adb522bcf))
 -   **link-check:** reduce frequency from weekly to monthly ([c971d0b](https://github.com/Fdawgs/ford-sync-update-checker/commit/c971d0bc4db9bcdf9d98f67667162088e9aeb5fd))
 -   **workflows:** move release steps into `cd` workflow ([1213e53](https://github.com/Fdawgs/ford-sync-update-checker/commit/1213e53155c8e73a8d843e45635c4209a2a5a914))
--   **workflows:** run only on push and pulls to master branch ([3840a0e](https://github.com/Fdawgs/ford-sync-update-checker/commit/3840a0ec57756a25f44f4d01aded1265e1380f11))
+-   **workflows:** run only on push and pulls to main branch ([3840a0e](https://github.com/Fdawgs/ford-sync-update-checker/commit/3840a0ec57756a25f44f4d01aded1265e1380f11))
 
 ### Dependencies
 
